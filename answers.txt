@@ -1,1 +1,33 @@
 ## Place your answers here.
+## Place your answers here.
+Exercise 1:
+zookd.c文件中process_client()函数内的process_client[4096]；
+process_client->http_request_line->url_decode会用src写该内存区域，并且没有做边界检查，可以进行buffer overflow攻击
+
+另外http_request_headers函数中的values[512]数组也有buffer overflow的可能
+
+Exercise 2:
+写一个超长的请求链接就可以产生buffer overflow，超过4096即可
+
+如：
+    wrong_str = "/"+4200*"A"
+    wrong_req = urllib.parse.quote(wrong_str,encoding='ascii').encode('ascii')
+    req =   b"GET "+wrong_req+b" HTTP/1.0\r\n" + \
+            b"\r\n"
+
+Exercise 4:
+首先修改shellcode.S文件，让该汇编代码去执行unlink函数，并且第一个参数为"/home/student/grades.txt"
+
+对Value[512]数组进行buffer overflow攻击
+
+Exercise 5:
+    1.zookd.c: process_client()
+        char reqpath[4096]
+
+    2.http.c: http_request_headers()
+        char value[512]
+   
+    Limitations: 这些漏洞主要通过函数调用的返回地址在栈上，通过写栈上buffer可以修改该地址进行攻击，进行边界检查可避免该漏洞
+
+Exercise 6：
+    在调用url_decode()前就行长度检查即可

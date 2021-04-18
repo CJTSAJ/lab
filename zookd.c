@@ -100,7 +100,8 @@ static void process_client(int fd)
 {
     static char env[8192];  /* static variables are not on the stack */
     static size_t env_len = 8192;
-    char reqpath[4096];
+    char reqpath[8192];
+    //printf("addr:   %p/n", &reqpath);
     const char *errmsg;
 
     /* get the request line */

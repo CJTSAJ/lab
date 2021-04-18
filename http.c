@@ -100,7 +100,8 @@ const char *http_request_line(int fd, char *reqpath, char *env, size_t *env_len)
         *qp = '\0';
         envp += sprintf(envp, "QUERY_STRING=%s", qp + 1) + 1;
     }
-
+    if(strlen(sp1) > 4096)
+	    return "URL too long\n";
     /* decode URL escape sequences in the requested path into reqpath */
     url_decode(reqpath, sp1);
 
@@ -154,7 +155,8 @@ const char *http_request_headers(int fd)
             if (buf[i] == '-')
                 buf[i] = '_';
         }
-
+	if(strlen(sp) > sizeof(value))
+		return "URL too long\n";
         /* Decode URL escape sequences in the value */
         url_decode(value, sp);
 
