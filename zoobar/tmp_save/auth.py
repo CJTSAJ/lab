@@ -3,13 +3,10 @@ from debug import *
 
 import hashlib
 import random
-import os
-import pbkdf2
 
 def newtoken(db, cred):
     hashinput = "%s%.10f" % (cred.password, random.random())
     cred.token = hashlib.md5(hashinput.encode('utf-8')).hexdigest()
-    
     db.commit()
     return cred.token
 
@@ -17,35 +14,35 @@ def login(username, password):
     db = person_setup()
     person = db.query(Person).get(username)
 
-   # cred_db = cred_setup()
-   # cred = cred_db.query(Cred).get(username)
+    cred_db = cred_setup()
+    cred = cred_db.query(Cred).get(username)
     if not person:
-        return False
-   # if cred.password == password:
-   #     return newtoken(cred_db, cred)
+        return None
+    if cred.password == password:
+        return newtoken(cred_db, cred)
     else:
-        return True 
+        return None
 
 def register(username, password):
     db = person_setup()
-    #cred_db = cred_setup()
+    cred_db = cred_setup()
     person = db.query(Person).get(username)
     if person:
-        return False
+        return None
     newperson = Person()
     newperson.username = username
 
-    #newcred = Cred()
-    #newcred.username = username
-    #newcred.password = password
+    newcred = Cred()
+    newcred.username = username
+    newcred.password = password
 
     db.add(newperson)
     db.commit()
 
-    #cred_db.add(newcred)
-    #cred_db.commit()
-    #return newtoken(cred_db, newcred)
-    return True
+    cred_db.add(newcred)
+    cred_db.commit()
+    return newtoken(cred_db, newcred)
+    #return True
 
 def check_token(username, token):
     db = cred_setup()
@@ -58,11 +55,10 @@ def check_token(username, token):
 def get_cred(username, password):
     db_cred = cred_setup()
     cred = db_cred.query(Cred).get(username)
-    if cred and cred.password == pbkdf2.PBKDF2(password, cred.salt).hexread(32):
+    if cred:
         return newtoken(db_cred, cred)
     else:
         return None
-
 def create_cred(username, password):
     db_cred = cred_setup()
     cred = db_cred.query(Cred).get(username)
@@ -70,9 +66,7 @@ def create_cred(username, password):
         return None
     newcred = Cred()
     newcred.username = username
-    salt = os.urandom(32)
-    newcred.salt = salt
-    newcred.password = pbkdf2.PBKDF2(password, salt).hexread(32)
+    newcred.passwd = password
     db_cred.add(newcred)
     db_cred.commit()
  

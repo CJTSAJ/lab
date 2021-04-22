@@ -30,11 +30,8 @@ def transfer(sender, recipient, zoobars):
 
 def balance(username):
     db = person_setup()
-    bank = db.query(Person).get(username)
-    if bank:
-        return bank.zoobars
-    else:
-        return None
+    person = db.query(Person).get(username)
+    return person.zoobars
 
 def get_log(username):
     db = transfer_setup()

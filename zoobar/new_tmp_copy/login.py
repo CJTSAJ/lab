@@ -13,11 +13,7 @@ class User(object):
         self.person = None
 
     def checkLogin(self, username, password):
-        log = auth.login(username, password)
-        if log is False:
-            return None
-
-        token = auth_client.get_cred(username, password)
+        token = auth_client.login(username, password)
         if token is not None:
             return self.loginCookie(username, token)
         else:
@@ -31,11 +27,7 @@ class User(object):
         self.person = None
 
     def addRegistration(self, username, password):
-        reg = auth.register(username, password)
-        if reg is False:
-            return None
-
-        token = auth_client.create_cred(username, password)
+        token = auth_client.register(username, password)
         if token is not None:
             return self.loginCookie(username, token)
         else:

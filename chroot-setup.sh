@@ -69,4 +69,3 @@ rm -rf /jail/zoobar/db
 
 python /jail/zoobar/zoodb.py init-person
 python /jail/zoobar/zoodb.py init-transfer
-
