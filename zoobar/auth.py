@@ -40,4 +40,21 @@ def check_token(username, token):
     else:
         return False
 
+def get_cred(username, password):
+    db_cred = cred_setup()
+    cred = db_cred.query(Cred).get(username)
+    return newtoken(db_cred, cred)
+
+def create_cred(username, password):
+    db_cred = cred_setup()
+    cred = db_cred.query(Cred).get(username)
+    if cred:
+        return None
+    newcred = Cred()
+    newcred.username = username
+    newcred.passwd = password
+    db_cred.add(newcred)
+    db_cred.commit()
+ 
+    return newtoken(db_cred, newcred)    
     

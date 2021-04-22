@@ -1,0 +1,428 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGV	shellcode.S	/^#define ARGV	(STRLEN+1)$/;"	d
+ASFLAGS	Makefile	/^ASFLAGS := -m64$/;"	m
+AuthRpcServer	zoobar/auth-server.py	/^class AuthRpcServer(rpclib.RpcServer):$/;"	c
+BASE	zookconf.py	/^BASE = "base"$/;"	v
+BASE	zookconf_copy.py	/^BASE = "base"$/;"	v
+CFLAGS	Makefile	/^CFLAGS  := -m64 -g -std=c99 -Wall -Wno-format-overflow -D_GNU_SOURCE -static$/;"	m
+CLONE_NEWNET	zoobar/sandboxlib.py	/^CLONE_NEWNET = 0x40000000$/;"	v
+CONF	readconf.py	/^CONF = "zook.conf"$/;"	v
+Conf	readconf.py	/^class Conf(object):$/;"	c
+ConfTable	readconf.py	/^class ConfTable(object):$/;"	c
+Container	zookconf.py	/^class Container():$/;"	c
+Container	zookconf_copy.py	/^class Container():$/;"	c
+ENVP	shellcode.S	/^#define ENVP	(ARGV+8)$/;"	d
+EchoRpcServer	zoobar/echo-server.py	/^class EchoRpcServer(rpclib.RpcServer):$/;"	c
+HOME	zookconf.py	/^HOME = "\/home\/student\/"$/;"	v
+HOME	zookconf_copy.py	/^HOME = "\/home\/student\/"$/;"	v
+KEY_FILE	submit.py	/^KEY_FILE = "submit.token"$/;"	v
+LDFLAGS	Makefile	/^LDFLAGS := -m64$/;"	m
+LDLIBS	Makefile	/^LDLIBS  := $/;"	m
+MAX_SERVICES	zookd2.c	16;"	d	file:
+PBKDF2	zoobar/pbkdf2.py	/^class PBKDF2(object):$/;"	c
+PROGS	Makefile	/^PROGS   := zookfs zookd2$/;"	m
+Person	zoobar/zoodb.py	/^class Person(PersonBase):$/;"	c
+PersonBase	zoobar/zoodb.py	/^PersonBase = declarative_base()$/;"	v
+ProcessTimeout	zoobar/sandboxlib.py	/^class ProcessTimeout(threading.Thread):$/;"	c
+ProfileAPIServer	zoobar/profile-server.py	/^class ProfileAPIServer(rpclib.RpcServer):$/;"	c
+ProfileServer	zoobar/profile-server.py	/^class ProfileServer(rpclib.RpcServer):$/;"	c
+RpcClient	zoobar/rpclib.py	/^class RpcClient(object):$/;"	c
+RpcServer	zoobar/rpclib.py	/^class RpcServer(object):$/;"	c
+STRING	shellcode.S	/^#define STRING	"\/home\/student\/grades.txt"$/;"	d
+STRLEN	shellcode.S	/^#define STRLEN	24$/;"	d
+Sandbox	zoobar/sandboxlib.py	/^class Sandbox(object):$/;"	c
+Transfer	zoobar/zoodb.py	/^class Transfer(TransferBase):$/;"	c
+TransferBase	zoobar/zoodb.py	/^TransferBase = declarative_base()$/;"	v
+User	zoobar/login.py	/^class User(object):$/;"	c
+_0xffffffffL	zoobar/pbkdf2.py	/^    _0xffffffffL = 0xffffffff$/;"	v
+_0xffffffffL	zoobar/pbkdf2.py	/^    _0xffffffffL = long(1) << 32$/;"	v
+__all__	zoobar/pbkdf2.py	/^__all__ = ['PBKDF2', 'crypt']$/;"	v
+__enter__	zoobar/rpclib.py	/^    def __enter__(self):$/;"	m	class:RpcClient	file:
+__exit__	zoobar/rpclib.py	/^    def __exit__(self, *args):$/;"	m	class:RpcClient	file:
+__f	zoobar/pbkdf2.py	/^    def __f(self, i):$/;"	m	class:PBKDF2	file:
+__init__	readconf.py	/^    def __init__(self):$/;"	m	class:ConfTable
+__init__	readconf.py	/^    def __init__(self, name):$/;"	m	class:Conf
+__init__	zoobar/login.py	/^    def __init__(self):$/;"	m	class:User
+__init__	zoobar/pbkdf2.py	/^    def __init__(self, passphrase, salt, iterations=1000,$/;"	m	class:PBKDF2
+__init__	zoobar/profile-server.py	/^    def __init__(self, user, visitor, pcode, ct):$/;"	m	class:ProfileAPIServer
+__init__	zoobar/rpclib.py	/^    def __init__(self, sock):$/;"	m	class:RpcClient
+__init__	zoobar/sandboxlib.py	/^    def __init__(self, dir, uid, lockfile, timeout=5.0):$/;"	m	class:Sandbox
+__init__	zoobar/sandboxlib.py	/^    def __init__(self, pid, timeout):$/;"	m	class:ProcessTimeout
+__init__	zookconf.py	/^    def __init__(self, conf, name, svcs, globalconf):$/;"	m	class:Container
+__init__	zookconf_copy.py	/^    def __init__(self, conf, name, svcs, globalconf):$/;"	m	class:Container
+__str__	readconf.py	/^    def __str__(self):$/;"	m	class:Conf	file:
+__str__	readconf.py	/^    def __str__(self):$/;"	m	class:ConfTable	file:
+__tablename__	zoobar/zoodb.py	/^    __tablename__ = "person"$/;"	v	class:Person
+__tablename__	zoobar/zoodb.py	/^    __tablename__ = "transfer"$/;"	v	class:Transfer
+__try	zoobar/debug.py	/^    def __try(*args, **kwargs):$/;"	f	function:catch_err	file:
+__version__	zoobar/pbkdf2.py	/^__version__ = "1.3"$/;"	v
+_makesalt	zoobar/pbkdf2.py	/^def _makesalt():$/;"	f
+_pseudorandom	zoobar/pbkdf2.py	/^    def _pseudorandom(self, key, msg):$/;"	m	class:PBKDF2
+_setup	zoobar/pbkdf2.py	/^    def _setup(self, passphrase, salt, iterations, prf):$/;"	m	class:PBKDF2
+accidentally	zookd.c	/^void accidentally(void)$/;"	f
+accidentally	zookd2.c	/^void accidentally(void)$/;"	f
+accidentally_addr	exploit-4.py	/^accidentally_addr = 0x000055555555588a$/;"	v
+add	readconf.py	/^    def add(self, n, v):$/;"	m	class:Conf
+add	readconf.py	/^    def add(self, n, v):$/;"	m	class:ConfTable
+addRegistration	zoobar/login.py	/^    def addRegistration(self, username, password):$/;"	m	class:User
+amount	zoobar/zoodb.py	/^    amount = Column(Integer)$/;"	v	class:Transfer
+app	zoobar/__init__.py	/^app = Flask(__name__)$/;"	v
+attach_wait	zookconf.py	/^    def attach_wait(self, *args, **kwargs):$/;"	m	class:Container
+attach_wait	zookconf_copy.py	/^    def attach_wait(self, *args, **kwargs):$/;"	m	class:Container
+b	zoobar/pbkdf2.py	/^    def b(s):$/;"	f
+b2a_hex	zoobar/pbkdf2.py	/^    def b2a_hex(s):$/;"	f
+b64encode	zoobar/pbkdf2.py	/^    def b64encode(data, chars="+\/"):$/;"	f
+balance	zoobar/bank.py	/^def balance(username):$/;"	f
+binxor	zoobar/pbkdf2.py	/^    def binxor(a, b):$/;"	f
+boot	zookconf.py	/^def boot(k=None):$/;"	f
+boot	zookconf_copy.py	/^def boot(k=None):$/;"	f
+buffered_readlines	zoobar/rpclib.py	/^def buffered_readlines(sock):$/;"	f
+build_exploit	exploit-2.py	/^def build_exploit(shellcode):$/;"	f
+build_exploit	exploit-3.py	/^def build_exploit(shellcode):$/;"	f
+build_exploit	exploit-4.py	/^def build_exploit(shellcode):$/;"	f
+call	zoobar/rpclib.py	/^    def call(self, method, **kwargs):$/;"	m	class:RpcClient
+callable	zoobar/pbkdf2.py	/^    def callable(obj):$/;"	f
+calladdr	shellcode.S	/^ calladdr:$/;"	l
+catch_err	zoobar/debug.py	/^def catch_err(f):$/;"	f
+cgi_gid	http.c	/^static int cgi_gid = -1;$/;"	v	file:
+cgi_gid	http2.c	/^static int cgi_gid = -1;$/;"	v	file:
+cgi_uid	http.c	/^static int cgi_uid = -1;$/;"	v	file:
+cgi_uid	http2.c	/^static int cgi_uid = -1;$/;"	v	file:
+check	z_client.py	/^def check(ip):$/;"	f
+checkCookie	zoobar/login.py	/^    def checkCookie(self, cookie):$/;"	m	class:User
+checkLogin	zoobar/login.py	/^    def checkLogin(self, username, password):$/;"	m	class:User
+check_challenge	check_lab2.py	/^def check_challenge():$/;"	f
+check_comm	check_lab2.py	/^def check_comm(src, dst):$/;"	f
+check_db	check_lab2.py	/^def check_db(ex, container, dbfile, table, columns):$/;"	f
+check_dbexists	check_lab2.py	/^def check_dbexists(cn, name):$/;"	f
+check_ex1	check_lab2.py	/^def check_ex1():$/;"	f
+check_ex10	check_lab2.py	/^def check_ex10():$/;"	f
+check_ex11	check_lab2.py	/^def check_ex11():$/;"	f
+check_ex12	check_lab2.py	/^def check_ex12():$/;"	f
+check_ex2	check_lab2.py	/^def check_ex2():$/;"	f
+check_ex3	check_lab2.py	/^def check_ex3():$/;"	f
+check_ex4	check_lab2.py	/^def check_ex4():$/;"	f
+check_ex4_1	check_lab2.py	/^def check_ex4_1():$/;"	f
+check_ex4_2	check_lab2.py	/^def check_ex4_2():$/;"	f
+check_ex5	check_lab2.py	/^def check_ex5():$/;"	f
+check_ex6	check_lab2.py	/^def check_ex6():$/;"	f
+check_ex7	check_lab2.py	/^def check_ex7():$/;"	f
+check_ex7_1	check_lab2.py	/^def check_ex7_1():$/;"	f
+check_ex9	check_lab2.py	/^def check_ex9():$/;"	f
+check_file	check_lab2.py	/^def check_file(cn, pn):$/;"	f
+check_fs	check_lab2.py	/^def check_fs():$/;"	f
+check_granter	check_lab2.py	/^def check_granter():$/;"	f
+check_granter_1	check_lab2.py	/^def check_granter_1():$/;"	f
+check_granter_2	check_lab2.py	/^def check_granter_2():$/;"	f
+check_granter_3	check_lab2.py	/^def check_granter_3():$/;"	f
+check_granter_4	check_lab2.py	/^def check_granter_4():$/;"	f
+check_hello	check_lab2.py	/^def check_hello():$/;"	f
+check_last_visits	check_lab2.py	/^def check_last_visits():$/;"	f
+check_last_visits_1	check_lab2.py	/^def check_last_visits_1():$/;"	f
+check_last_visits_2	check_lab2.py	/^def check_last_visits_2():$/;"	f
+check_last_visits_3	check_lab2.py	/^def check_last_visits_3():$/;"	f
+check_myprofile	check_lab2.py	/^def check_myprofile():$/;"	f
+check_nocomm	check_lab2.py	/^def check_nocomm(src, dst):$/;"	f
+check_nodb	check_lab2.py	/^def check_nodb(cn):$/;"	f
+check_profile	check_lab2.py	/^def check_profile(prof_py, prof_pat, msg):$/;"	f
+check_profile_internal	check_lab2.py	/^def check_profile_internal(logmsg, code, prof_pat,$/;"	f
+check_profile_service	check_lab2.py	/^def check_profile_service():$/;"	f
+check_run	check_lab2.py	/^def check_run(containers):$/;"	f
+check_token	zoobar/auth.py	/^def check_token(username, token):$/;"	f
+check_token	zoobar/auth_client.py	/^def check_token(username, token):$/;"	f
+check_visit_tracker	check_lab2.py	/^def check_visit_tracker():$/;"	f
+check_visit_tracker_1	check_lab2.py	/^def check_visit_tracker_1():$/;"	f
+check_visit_tracker_2	check_lab2.py	/^def check_visit_tracker_2():$/;"	f
+check_xfer_tracker	check_lab2.py	/^def check_xfer_tracker():$/;"	f
+check_xfer_tracker_1	check_lab2.py	/^def check_xfer_tracker_1():$/;"	f
+check_zoobars	z_client.py	/^def check_zoobars(html, user, zoobars, zmsg):$/;"	f
+child	zoobar/sandboxlib.py	/^    def child(self, func):$/;"	m	class:Sandbox
+clean	zookconf.py	/^def clean(k=None):$/;"	f
+clean	zookconf_copy.py	/^def clean(k=None):$/;"	f
+clean_state	check_lab2.py	/^def clean_state(containers):$/;"	f
+client_connect	zoobar/rpclib.py	/^def client_connect(host):$/;"	f
+clone	zooksvc.py	/^def clone(conf, fd=None, sock=None):$/;"	f
+close	zoobar/pbkdf2.py	/^    def close(self):$/;"	m	class:PBKDF2
+close	zoobar/rpclib.py	/^    def close(self):$/;"	m	class:RpcClient
+column_in_table	check_lab2.py	/^def column_in_table(container, dbfile, table, column):$/;"	f
+conf	readconf.py	/^    def conf(self, svc):$/;"	m	class:ConfTable
+configure_base	zookconf.py	/^    def configure_base(self):$/;"	m	class:Container
+configure_base	zookconf_copy.py	/^    def configure_base(self):$/;"	m	class:Container
+configure_fw	zookconf.py	/^    def configure_fw(self):$/;"	m	class:Container
+configure_fw	zookconf_copy.py	/^    def configure_fw(self):$/;"	m	class:Container
+configure_fw_rule	zookconf.py	/^    def configure_fw_rule(self, r_orig):$/;"	m	class:Container
+configure_fw_rule	zookconf_copy.py	/^    def configure_fw_rule(self, r_orig):$/;"	m	class:Container
+configure_network	zookconf.py	/^    def configure_network(self, link):$/;"	m	class:Container
+configure_network	zookconf_copy.py	/^    def configure_network(self, link):$/;"	m	class:Container
+container_path	check_lab2.py	/^def container_path(name, path):$/;"	f
+copy_file	zookconf.py	/^    def copy_file(self, d, name):$/;"	m	class:Container
+copy_file	zookconf_copy.py	/^    def copy_file(self, d, name):$/;"	m	class:Container
+create_socket_dir	chroot-setup.sh	/^create_socket_dir() {$/;"	f
+crypt	zoobar/pbkdf2.py	/^def crypt(word, salt=None, iterations=None):$/;"	f
+db_tables	check_lab2.py	/^def db_tables(container, dbfile):$/;"	f
+dbquery	check_lab2.py	/^def dbquery(container, dbfile, q):$/;"	f
+dbsetup	zoobar/zoodb.py	/^def dbsetup(name, base):$/;"	f
+dir_join	http.c	/^void dir_join(char *dst, const char *dirname, const char *filename) {$/;"	f
+dir_join	http2.c	/^void dir_join(char *dst, const char *dirname, const char *filename) {$/;"	f
+disable_xss_protection	zoobar/__init__.py	/^def disable_xss_protection(response):$/;"	f
+div	zoobar/templates/zoobars.js	/^var div = document.getElementById("myZoobars");$/;"	v
+dup_dir	zookconf.py	/^    def dup_dir(self, host_dir, excludes=[]):$/;"	m	class:Container
+dup_dir	zookconf_copy.py	/^    def dup_dir(self, host_dir, excludes=[]):$/;"	m	class:Container
+echo	zoobar/echo.py	/^def echo():$/;"	f
+env_deserialize	http.c	/^void env_deserialize(const char *env, size_t len)$/;"	f
+env_deserialize	http2.c	/^void env_deserialize(const char *env, size_t len)$/;"	f
+errcheck	zoobar/sandboxlib.py	/^def errcheck(ret, func, args):$/;"	f
+errormsg	zookconf.py	/^    def errormsg(self, msg):$/;"	m	class:Container
+errormsg	zookconf_copy.py	/^    def errormsg(self, msg):$/;"	m	class:Container
+f	zookconf.py	/^    def f():$/;"	f	function:save_hostname
+f	zookconf_copy.py	/^    def f():$/;"	f	function:save_hostname
+fail	check_lab2.py	/^def fail(*m):$/;"	f
+fail_exit	check_lab2.py	/^def fail_exit(*m):$/;"	f
+fdprintf	http.c	/^void fdprintf(int fd, char *fmt, ...)$/;"	f
+fdprintf	http2.c	/^void fdprintf(int fd, char *fmt, ...)$/;"	f
+file_addr	exploit-4.py	/^file_addr = 0x7fffffffdce0$/;"	v
+file_read	check_lab2.py	/^def file_read(pn):$/;"	f
+file_read	z_client.py	/^def file_read(pn):$/;"	f
+file_read_check	check_lab2.py	/^def file_read_check(logmsg, sbpath, realpath=None, data=None,$/;"	f
+file_read_raw	check_lab2.py	/^def file_read_raw(pn):$/;"	f
+file_read_sz	check_lab2.py	/^def file_read_sz(pn, size=-1):$/;"	f
+file_write	z_client.py	/^def file_write(pn, data):$/;"	f
+file_write_check	check_lab2.py	/^def file_write_check(logmsg, sbpath, data=None,$/;"	f
+fn	profiles/last-visits.py	/^fn = 'last_visits_%s.dat' % selfuser$/;"	v
+fn	profiles/visit-tracker.py	/^fn = 'last_visit_%s_%s.dat' % (selfuser, visitor)$/;"	v
+format_req	zoobar/rpclib.py	/^def format_req(method, kwargs):$/;"	f
+format_resp	zoobar/rpclib.py	/^def format_resp(resp):$/;"	f
+get	z_client.py	/^def get(url, cookies):$/;"	f
+get_log	zoobar/bank.py	/^def get_log(username):$/;"	f
+green	check_lab2.py	/^def green(s):$/;"	f
+hexread	zoobar/pbkdf2.py	/^    def hexread(self, octets):$/;"	m	class:PBKDF2
+http_err	http.c	/^void http_err(int fd, int code, char *fmt, ...)$/;"	f
+http_err	http2.c	/^void http_err(int fd, int code, char *fmt, ...)$/;"	f
+http_parse_line	http2.c	/^const char *http_parse_line(char *buf, char *envvar, char *value)$/;"	f
+http_read_line	http.c	/^int http_read_line(int fd, char *buf, size_t size)$/;"	f
+http_read_line	http2.c	/^int http_read_line(int fd, char *buf, size_t size)$/;"	f
+http_request_headers	http.c	/^const char *http_request_headers(int fd)$/;"	f
+http_request_headers	http2.c	/^const char *http_request_headers(int fd)$/;"	f
+http_request_line	http.c	/^const char *http_request_line(int fd, char *reqpath, char *env, size_t *env_len)$/;"	f
+http_request_line	http2.c	/^const char *http_request_line(int fd, char *reqpath, char *env, size_t *env_len)$/;"	f
+http_serve	http.c	/^void http_serve(int fd, const char *name)$/;"	f
+http_serve	http2.c	/^void http_serve(int fd, const char *name)$/;"	f
+http_serve_directory	http.c	/^void http_serve_directory(int fd, const char *pn) {$/;"	f
+http_serve_directory	http2.c	/^void http_serve_directory(int fd, const char *pn) {$/;"	f
+http_serve_executable	http.c	/^void http_serve_executable(int fd, const char *pn)$/;"	f
+http_serve_executable	http2.c	/^void http_serve_executable(int fd, const char *pn)$/;"	f
+http_serve_file	http.c	/^void http_serve_file(int fd, const char *pn)$/;"	f
+http_serve_file	http2.c	/^void http_serve_file(int fd, const char *pn)$/;"	f
+http_serve_none	http.c	/^void http_serve_none(int fd, const char *pn)$/;"	f
+http_serve_none	http2.c	/^void http_serve_none(int fd, const char *pn)$/;"	f
+http_set_executable_uid_gid	http.c	/^http_set_executable_uid_gid(int uid, int gid)$/;"	f
+http_set_executable_uid_gid	http2.c	/^http_set_executable_uid_gid(int uid, int gid)$/;"	f
+http_svcs	readconf.py	/^    def http_svcs(self):$/;"	m	class:Conf
+id	zoobar/zoodb.py	/^    id = Column(Integer, primary_key=True)$/;"	v	class:Transfer
+index	zoobar/index.py	/^def index():$/;"	f
+info	zookconf.py	/^def info(c):$/;"	f
+info	zookconf_copy.py	/^def info(c):$/;"	f
+infomsg	zookconf.py	/^    def infomsg(self, msg):$/;"	m	class:Container
+infomsg	zookconf_copy.py	/^    def infomsg(self, msg):$/;"	m	class:Container
+init_dns	zookconf.py	/^def init_dns():$/;"	f
+init_dns	zookconf_copy.py	/^def init_dns():$/;"	f
+ipaddr	check_lab2.py	/^def ipaddr(c):$/;"	f
+isbytes	zoobar/pbkdf2.py	/^    def isbytes(s):$/;"	f
+isinteger	zoobar/pbkdf2.py	/^    def isinteger(n):$/;"	f
+isservice	readconf.py	/^    def isservice(self, k):$/;"	m	class:ConfTable
+isunicode	zoobar/pbkdf2.py	/^    def isunicode(s):$/;"	f
+kill	zoobar/sandboxlib.py	/^    def kill(self):$/;"	m	class:ProcessTimeout
+killall	check_lab2.py	/^def killall():$/;"	f
+last_fn	profiles/granter.py	/^last_fn = 'last_freebie_%s_%s.dat' % (selfuser, visitor)$/;"	v
+last_xfer	profiles/granter.py	/^    last_xfer = float(f.read())$/;"	v
+last_xfer	profiles/granter.py	/^last_xfer = 0$/;"	v
+libc	zoobar/sandboxlib.py	/^libc = ctypes.CDLL('libc.so.6', use_errno=True)$/;"	v
+link_to_hostaddr	zookconf.py	/^def link_to_hostaddr(link):$/;"	f
+link_to_hostaddr	zookconf_copy.py	/^def link_to_hostaddr(link):$/;"	f
+link_to_subnet	zookconf.py	/^def link_to_subnet(link):$/;"	f
+link_to_subnet	zookconf_copy.py	/^def link_to_subnet(link):$/;"	f
+log	check_lab2.py	/^def log(*m):$/;"	f
+log	zoobar/debug.py	/^def log(msg):$/;"	f
+log_exit	check_lab2.py	/^def log_exit(*m):$/;"	f
+log_to_file	check_lab2.py	/^def log_to_file(*m):$/;"	f
+logged_in	zoobar/login.py	/^def logged_in():$/;"	f
+login	z_client.py	/^def login(user, password):$/;"	f
+login	zoobar/auth.py	/^def login(username, password):$/;"	f
+login	zoobar/auth_client.py	/^def login(username, password):$/;"	f
+login	zoobar/login.py	/^def login():$/;"	f
+loginCookie	zoobar/login.py	/^    def loginCookie(self, username, token):$/;"	m	class:User
+login_page	z_client.py	/^def login_page(op, user, password):$/;"	f
+loginhelper	zoobar/login.py	/^    def loginhelper(*args, **kwargs):$/;"	f	function:requirelogin
+logout	zoobar/login.py	/^    def logout(self):$/;"	m	class:User
+logout	zoobar/login.py	/^def logout():$/;"	f
+lookup	readconf.py	/^    def lookup(self, k):$/;"	m	class:Conf
+lookup	readconf.py	/^    def lookup(self, svc, key):$/;"	m	class:ConfTable
+lookup_host	readconf.py	/^    def lookup_host(self, svc):$/;"	m	class:ConfTable
+main	check_lab2.py	/^def main():$/;"	f
+main	run-shellcode.c	/^main(int ac, char **av)$/;"	f
+main	shellcode.S	/^ main:$/;"	l
+main	submit.py	/^def main(filename):$/;"	f
+main	zoobar/debug.py	/^def main():$/;"	f
+main	zookclean.py	/^def main():$/;"	f
+main	zookd.c	/^int main(int argc, char **argv)$/;"	f
+main	zookd2.c	/^int main(int argc, char **argv)$/;"	f
+main	zookfs.c	/^int main(int argc, char **argv)$/;"	f
+main	zookld.py	/^def main():$/;"	f
+main	zookps.py	/^def main():$/;"	f
+main	zookstop.py	/^def main():$/;"	f
+main	zooksvc.py	/^def main():$/;"	f
+make_base	zookconf.py	/^    def make_base(self):$/;"	m	class:Container
+make_base	zookconf_copy.py	/^    def make_base(self):$/;"	m	class:Container
+make_container	zookconf.py	/^    def make_container(self):$/;"	m	class:Container
+make_container	zookconf_copy.py	/^    def make_container(self):$/;"	m	class:Container
+me	profiles/granter.py	/^me = api.call('get_user_info', username=selfuser)$/;"	v
+newtoken	zoobar/auth.py	/^def newtoken(db, person):$/;"	f
+now	profiles/granter.py	/^now = time.time()$/;"	v
+nsvc	readconf.py	/^    def nsvc(self):$/;"	m	class:ConfTable
+nsvcs	zookd2.c	/^static int nsvcs;$/;"	v	file:
+ok	check_lab2.py	/^def ok(*m):$/;"	f
+parse_req	zoobar/rpclib.py	/^def parse_req(req):$/;"	f
+parse_resp	zoobar/rpclib.py	/^def parse_resp(resp):$/;"	f
+password	zoobar/zoodb.py	/^    password = Column(String(128))$/;"	v	class:Person
+person_setup	zoobar/zoodb.py	/^def person_setup():$/;"	f
+popladdr	shellcode.S	/^ popladdr:$/;"	l
+post	z_client.py	/^def post(url, cookies, postdata):$/;"	f
+print_wget_log	z_client.py	/^def print_wget_log():$/;"	f
+process_client	zookd.c	/^static void process_client(int fd)$/;"	f	file:
+process_client	zookd2.c	/^static void process_client(int fd)$/;"	f	file:
+process_client	zookfs.c	/^static void process_client(int fd)$/;"	f	file:
+profile	zoobar/zoodb.py	/^    profile = Column(String(5000), nullable=False, default="")$/;"	v	class:Person
+proxy	zookd2.c	/^static int proxy(int i, int fd, char *env, size_t env_len)$/;"	f	file:
+ps	zookconf.py	/^def ps(k=None):$/;"	f
+ps	zookconf_copy.py	/^def ps(k=None):$/;"	f
+read	zoobar/pbkdf2.py	/^    def read(self, bytes):$/;"	m	class:PBKDF2
+read_conf	readconf.py	/^def read_conf(d=".\/"):$/;"	f
+read_line	zookd2.c	/^int read_line(int fd, char *buf, size_t size, int eoh)$/;"	f
+recipient	zoobar/zoodb.py	/^    recipient = Column(String(128))$/;"	v	class:Transfer
+recvfd	http.c	/^ssize_t recvfd(int socket, void *buffer, size_t length, int *fd)$/;"	f
+recvfd	http2.c	/^ssize_t recvfd(int socket, void *buffer, size_t length, int *fd)$/;"	f
+red	check_lab2.py	/^def red(s):$/;"	f
+register	z_client.py	/^def register(user, password):$/;"	f
+register	zoobar/auth.py	/^def register(username, password):$/;"	f
+register	zoobar/auth_client.py	/^def register(username, password):$/;"	f
+req	exploit-2.py	/^    req = build_exploit(shellcode)$/;"	v
+req	exploit-3.py	/^    req = build_exploit(shellcode)$/;"	v
+req	exploit-4.py	/^    req = build_exploit(shellcode)$/;"	v
+requirelogin	zoobar/login.py	/^def requirelogin(page):$/;"	f
+resp	exploit-2.py	/^    resp = send_req(sys.argv[1], int(sys.argv[2]), req)$/;"	v
+resp	exploit-3.py	/^    resp = send_req(sys.argv[1], int(sys.argv[2]), req)$/;"	v
+resp	exploit-4.py	/^    resp = send_req(sys.argv[1], int(sys.argv[2]), req)$/;"	v
+retaddr	exploit-4.py	/^retaddr = 0x7fffffffdcc8$/;"	v
+rpc_echo	zoobar/echo-server.py	/^    def rpc_echo(self, s):$/;"	m	class:EchoRpcServer
+rpc_get_self	zoobar/profile-server.py	/^    def rpc_get_self(self):$/;"	m	class:ProfileAPIServer
+rpc_get_user_info	zoobar/profile-server.py	/^    def rpc_get_user_info(self, username):$/;"	m	class:ProfileAPIServer
+rpc_get_visitor	zoobar/profile-server.py	/^    def rpc_get_visitor(self):$/;"	m	class:ProfileAPIServer
+rpc_get_xfers	zoobar/profile-server.py	/^    def rpc_get_xfers(self, username):$/;"	m	class:ProfileAPIServer
+rpc_run	zoobar/profile-server.py	/^    def rpc_run(self, pcode, user, visitor):$/;"	m	class:ProfileServer
+rpc_xfer	zoobar/profile-server.py	/^    def rpc_xfer(self, target, zoobars):$/;"	m	class:ProfileAPIServer
+run	zoobar/sandboxlib.py	/^    def run(self):$/;"	m	class:ProcessTimeout
+run	zoobar/sandboxlib.py	/^    def run(self, func):$/;"	m	class:Sandbox
+run_cmd	zookconf.py	/^    def run_cmd(self, cmd, extra_env_vars=[]):$/;"	m	class:Container
+run_cmd	zookconf_copy.py	/^    def run_cmd(self, cmd, extra_env_vars=[]):$/;"	m	class:Container
+run_fork	zoobar/rpclib.py	/^    def run_fork(self, port):$/;"	m	class:RpcServer
+run_profile	zoobar/profile-server.py	/^def run_profile(pcode, profile_api_client):$/;"	f
+run_profile	zoobar/profile.py	/^def run_profile(user):$/;"	f
+run_server	zookd.c	/^static int run_server(const char *port) {$/;"	f	file:
+run_sock	zoobar/rpclib.py	/^    def run_sock(self, sock):$/;"	m	class:RpcServer
+run_wget	z_client.py	/^def run_wget(opts=[]):$/;"	f
+s	zoobar/auth-server.py	/^s = AuthRpcServer()$/;"	v
+s	zoobar/echo-server.py	/^s = EchoRpcServer()$/;"	v
+s	zoobar/profile-server.py	/^s = ProfileServer()$/;"	v
+save_hostname	zookconf.py	/^def save_hostname(name):$/;"	f
+save_hostname	zookconf_copy.py	/^def save_hostname(name):$/;"	f
+selfuser	profiles/granter.py	/^selfuser = api.call('get_self')$/;"	v
+selfuser	profiles/last-visits.py	/^selfuser = api.call('get_self')$/;"	v
+selfuser	profiles/visit-tracker.py	/^selfuser = api.call('get_self')$/;"	v
+selfuser	profiles/xfer-tracker.py	/^selfuser = api.call('get_self')$/;"	v
+send	zooksvc.py	/^def send(conf, wfd, n, form):$/;"	f
+send_req	exploit-2.py	/^def send_req(host, port, req):$/;"	f
+send_req	exploit-3.py	/^def send_req(host, port, req):$/;"	f
+send_req	exploit-4.py	/^def send_req(host, port, req):$/;"	f
+sendct	zooksvc.py	/^def sendct(wfd, svcs, ct, n, form):$/;"	f
+sender	zoobar/zoodb.py	/^    sender = Column(String(128))$/;"	v	class:Transfer
+sendfd	http.c	/^ssize_t sendfd(int socket, const void *buffer, size_t length, int fd)$/;"	f
+sendfd	http2.c	/^ssize_t sendfd(int socket, const void *buffer, size_t length, int fd)$/;"	f
+sendnsvc	zooksvc.py	/^def sendnsvc(nsvc, wfd):$/;"	f
+serverip	check_lab2.py	/^serverip = "10.1.0.4"$/;"	v
+serverip	z_client.py	/^serverip = "10.1.0.4"$/;"	v
+setPerson	zoobar/login.py	/^    def setPerson(self, username, token):$/;"	m	class:User
+set_caller_ip	zoobar/rpclib.py	/^    def set_caller_ip(self, ip):$/;"	m	class:RpcServer
+set_perms	chroot-setup.sh	/^set_perms() {$/;"	f
+setup	check_lab2.py	/^def setup():$/;"	f
+setup_env	check_lab2.py	/^def setup_env():$/;"	f
+sh	check_lab2.py	/^def sh(cmd, exit_onerr=True):$/;"	f
+shellcode	exploit-2.py	/^    shellcode = shellfile.read()$/;"	v
+shellcode	exploit-3.py	/^    shellcode = shellfile.read()$/;"	v
+shellcode	exploit-4.py	/^    shellcode = shellfile.read()$/;"	v
+shellfile	exploit-2.py	/^    shellfile = open("shellcode.bin", "rb")$/;"	v
+shellfile	exploit-3.py	/^    shellfile = open("shellcode.bin", "rb")$/;"	v
+shellfile	exploit-4.py	/^    shellfile = open("shellcode.bin", "rb")$/;"	v
+showZoobars	zoobar/templates/users.html	/^  function showZoobars(zoobars) {$/;"	f
+shutdown	zookconf.py	/^def shutdown(k=None):$/;"	f
+shutdown	zookconf_copy.py	/^def shutdown(k=None):$/;"	f
+split_path	http.c	/^void split_path(char *pn)$/;"	f
+split_path	http2.c	/^void split_path(char *pn)$/;"	f
+stack_buffer	exploit-2.py	/^stack_buffer = 0x34567890$/;"	v
+stack_buffer	exploit-3.py	/^stack_buffer = 0x7fffffffda90$/;"	v
+stack_retaddr	exploit-2.py	/^stack_retaddr = 0x12345678$/;"	v
+stack_retaddr	exploit-3.py	/^stack_retaddr = 0x7fffffffdcc8$/;"	v
+start	zooksvc.py	/^def start(k):$/;"	f
+start_daemon	zookd2.c	/^static int start_daemon(int fd, int sockfd) {$/;"	f	file:
+start_server	zookd.c	/^static int start_server(const char *portstr)$/;"	f	file:
+start_server	zookfs.c	/^static int start_server(const char *portstr)$/;"	f	file:
+start_server	zooksvc.py	/^def start_server(host, port):$/;"	f
+svchosts	zookd2.c	/^static char svchosts[MAX_SERVICES][1024];$/;"	v	file:
+svcports	zookd2.c	/^static int svcports[MAX_SERVICES];$/;"	v	file:
+svcs	readconf.py	/^    def svcs(self):$/;"	m	class:ConfTable
+svcurls	zookd2.c	/^static regex_t svcurls[MAX_SERVICES];$/;"	v	file:
+thisdir	check_lab2.py	/^thisdir = os.path.dirname(os.path.abspath(__file__))$/;"	v
+time	zoobar/zoodb.py	/^    time = Column(String)$/;"	v	class:Transfer
+token	zoobar/zoodb.py	/^    token = Column(String(128))$/;"	v	class:Person
+touch	http.c	/^void touch(const char *name) {$/;"	f
+touch	http2.c	/^void touch(const char *name) {$/;"	f
+transfer	z_client.py	/^def transfer(sender_cookies, recipient, zoobars):$/;"	f
+transfer	zoobar/bank.py	/^def transfer(sender, recipient, zoobars):$/;"	f
+transfer	zoobar/transfer.py	/^def transfer():$/;"	f
+transfer_setup	zoobar/zoodb.py	/^def transfer_setup():$/;"	f
+unlink_addr	exploit-4.py	/^unlink_addr = 0x15555504cd40$/;"	v
+update_profile	check_lab2.py	/^def update_profile(cookie, code):$/;"	f
+url_decode	http.c	/^void url_decode(char *dst, const char *src)$/;"	f
+url_decode	http2.c	/^void url_decode(char *dst, const char *src)$/;"	f
+urlencode	exploit-4.py	/^def urlencode(b):$/;"	f
+username	zoobar/zoodb.py	/^    username = Column(String(128), primary_key=True)$/;"	v	class:Person
+users	zoobar/users.py	/^def users():$/;"	f
+valid_cgi_script	http.c	/^valid_cgi_script(struct stat *st)$/;"	f	file:
+valid_cgi_script	http2.c	/^valid_cgi_script(struct stat *st)$/;"	f	file:
+value_addr	exploit-4.py	/^value_addr = 0x7fffffffda90$/;"	v
+verbose	check_lab2.py	/^verbose = False$/;"	v
+view_user	z_client.py	/^def view_user(cookies, username):$/;"	f
+visit_count	profiles/visit-tracker.py	/^    visit_count = int(f.readline())$/;"	v
+visit_count	profiles/visit-tracker.py	/^visit_count = 0$/;"	v
+visit_last	profiles/visit-tracker.py	/^    visit_last = f.readline()$/;"	v
+visit_last	profiles/visit-tracker.py	/^visit_last = 'never'$/;"	v
+visit_last	profiles/visit-tracker.py	/^visit_last = time.time()$/;"	v
+visitor	profiles/granter.py	/^visitor = api.call('get_visitor')$/;"	v
+visitor	profiles/last-visits.py	/^visitor = api.call('get_visitor')$/;"	v
+visitor	profiles/visit-tracker.py	/^visitor = api.call('get_visitor')$/;"	v
+visitor	profiles/xfer-tracker.py	/^visitor = api.call('get_visitor')$/;"	v
+visits	profiles/last-visits.py	/^    visits = [l.strip() for l in f.readlines()]$/;"	v
+visits	profiles/last-visits.py	/^visits = ['%s at %d' % (visitor, time.time())] + visits$/;"	v
+visits	profiles/last-visits.py	/^visits = []$/;"	v
+visits	profiles/last-visits.py	/^visits = visits[:3]$/;"	v
+wget_log	z_client.py	/^wget_log = []$/;"	v
+xrange	zoobar/pbkdf2.py	/^    xrange = range$/;"	v
+you	profiles/granter.py	/^you = api.call('get_user_info', username=visitor)$/;"	v
+zoobarjs	zoobar/zoobarjs.py	/^def zoobarjs():$/;"	f
+zoobars	zoobar/zoodb.py	/^    zoobars = Column(Integer, nullable=False, default=10)$/;"	v	class:Person
+zooksvc	zookconf.py	/^    def zooksvc(self, k):$/;"	m	class:Container
+zooksvc	zookconf_copy.py	/^    def zooksvc(self, k):$/;"	m	class:Container
