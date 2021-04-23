@@ -15,7 +15,7 @@ class Person(PersonBase):
     #password = Column(String(128))
     #token = Column(String(128))
     profile = Column(String(5000), nullable=False, default="")
-    zoobars = Column(Integer, nullable=False, default=10)
+    #zoobars = Column(Integer, nullable=False, default=10)
 
 
 class Transfer(TransferBase):
@@ -74,5 +74,7 @@ if __name__ == "__main__":
         transfer_setup()
     elif cmd == 'init-cred':
         cred_setup()
+    elif cmd == 'init-bank':
+        bank_setup()
     else:
         raise Exception("unknown command %s" % cmd)
